@@ -1,3 +1,6 @@
+# This is a fork of [Elliot Jackson's](https://elliotekj.com) [Orbit project](https://github.com/elliotekj/orbit/blob/master/README.md).
+## The focus is to make it compatible with my Jekyll installation.
+
 # Orbit - A MetaWeblog API Server for Hugo
 
 ![](https://github.com/elliotekj/orbit/blob/master/.README/demo.gif)
