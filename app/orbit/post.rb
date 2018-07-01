@@ -42,8 +42,12 @@ class Post
   # Returns a post Hash.
   def self.create(path, metaweblog_struct)
     structDate = metaweblog_struct['dateCreated']
-    now = DateTime.new(structDate.year, structDate.month, structDate.day, structDate.hour, structDate.min, structDate.sec)
-    print(metaweblog_struct)
+    if structDate.nil?
+      now = DateTime.now()
+    else
+      now = DateTime.new(structDate.year, structDate.month, structDate.day, structDate.hour, structDate.min, structDate.sec)
+    end
+    
     filename = now.strftime('%Y-%m-%d-%H-%M-%S.md')
 
     post_id = File.join(path, filename)
